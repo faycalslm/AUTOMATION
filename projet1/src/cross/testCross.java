@@ -12,7 +12,7 @@ public class testCross {
 	@Test
 	@Parameters("browser")
 	public void testBrowser(String browser) {
-		if(browser.equalsIgnoreCase("chrome")) {
+		if(browser.equalsIgnoreCase("Chrome")) {
 			
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\safae\\Downloads\\chromedriver\\chromedriver.exe");
 			driver = new ChromeDriver();
