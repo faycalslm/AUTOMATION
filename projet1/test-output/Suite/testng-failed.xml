@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="ie"/>
     <classes>
-      <class name="cross.testCross">
+      <class name="cross.OuvrirAllianzNEWPGD">
         <methods>
-          <include name="testBrowser" invocation-numbers="0"/>
+          <include name="testAllianz"/>
         </methods>
-      </class> <!-- cross.testCross -->
+      </class> <!-- cross.OuvrirAllianzNEWPGD -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

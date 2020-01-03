@@ -1,16 +1,20 @@
   package packfay;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Gmail {
 	
 	WebDriver driver;
 	public void invokeBrowser() {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\safae\\Downloads\\chromedriver\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\safae\\Downloads\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -22,7 +26,10 @@ public class Gmail {
 		invokeBrowser();
 		driver.get("http://www.kooora.com/");
 		String title = driver.getTitle();
-		assert true; title.contains("gt");	
+		//assert true; title.contains("gt");	
+		assertTrue(title.contains("gt"));
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+		driver.close();
 	}
 	public static void main(String[] args) {
 
