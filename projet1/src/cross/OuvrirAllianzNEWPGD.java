@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class OuvrirAllianzNEWPGD {
 	
 	public WebDriver driver ;
-	public String ProjectPathj = System.getProperty("user.dir");
+	String ProjectPathj = System.getProperty("user.dir");
 	
 	public void accesNewpgd() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\fselmane\\Downloads\\chromedriver_win32\\chromedriver1.exe");
