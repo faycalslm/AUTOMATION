@@ -48,7 +48,7 @@ public class ScreenMethod {
 		}	
 		}	
 	
-	//prendre capture d'ecran d'un seul element ou frame
+	//prendre capture d'ecran d'un seul element ou framee
 	
 		public static void takePartialScreenShot(WebDriver driver , WebElement element) throws IOException {
 
